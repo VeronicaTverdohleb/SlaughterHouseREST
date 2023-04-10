@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Registration System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .container {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>Animal Registration System</h1>
+    <p>A RESTful Web Service for Animal Registration</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>API Endpoints</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>/animals</td>
+                    <td>GET</td>
+                    <td>Retrieve all registered animals</td>
+                </tr>
+                <tr>
+                    <td>/animals</td>
+                    <td>POST</td>
+                    <td>Add a new animal</td>
+                </tr>
+                <tr>
+                    <td>/animals/{registrationNumber}</td>
+                    <td>GET</td>
+                    <td>Retrieve animal by registration number</td>
+                </tr>
+                <tr>
+                    <td>/animals/by-date/{date}</td>
+                    <td>GET</td>
+                    <td>Retrieve animals by arrival date (yyyy-MM-dd format)</td>
+                </tr>
+                <tr>
+                    <td>/animals/by-origin/{origin}</td>
+                    <td>GET</td>
+                    <td>Retrieve animals by origin (i.e., farm)</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
